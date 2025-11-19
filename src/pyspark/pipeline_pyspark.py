@@ -11,11 +11,15 @@ data_pyspark/
 
 Override via --output-root. Les inputs restent ceux du settings.yaml (customers/refunds/orders_*).
 """
+
 from __future__ import annotations
 
 import argparse
 import glob
 import json
+
+# --- Logging léger côté driver ---
+import logging
 import os
 import sqlite3
 import sys
@@ -25,15 +29,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict
 
-import pandas as pd
 import yaml
+
+import pandas as pd
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql import types as T
 from pyspark.sql.window import Window
 
-# --- Logging léger côté driver ---
-import logging
 LOG = logging.getLogger("pipeline_pyspark")
 handler = logging.StreamHandler(sys.stdout)
 handler.setFormatter(logging.Formatter("%(asctime)s | %(levelname)s | %(message)s"))
@@ -125,13 +128,22 @@ def to_date_str_udf(s: Any) -> str:
 # -----------------------
 NUMERIC_REGEX = r"^\s*[-+]?(?:\d+(?:\.\d+)?|\.\d+)\s*$"
 
+
 def safe_double_col(colname: str) -> F.Column:
     s = F.regexp_replace(F.col(colname).cast("string"), ",", ".")
     return F.when(s.rlike(NUMERIC_REGEX), s.cast("double")).otherwise(F.lit(0.0))
 
+
 def count_non_numeric(df: DataFrame, colname: str) -> int:
     s = F.regexp_replace(F.col(colname).cast("string"), ",", ".")
-    return df.select(F.sum(F.when(~s.rlike(NUMERIC_REGEX), F.lit(1)).otherwise(F.lit(0))).alias("n")).first()["n"] or 0
+    return (
+        df.select(
+            F.sum(F.when(~s.rlike(NUMERIC_REGEX), F.lit(1)).otherwise(F.lit(0))).alias(
+                "n"
+            )
+        ).first()["n"]
+        or 0
+    )
 
 
 # -----------------------
@@ -142,10 +154,10 @@ def read_customers(spark: SparkSession, path: str) -> DataFrame:
         raise FileNotFoundError(f"Fichier manquant: {path}")
     df = spark.read.option("header", True).csv(path)
     df = df.withColumn("is_active", controle_bool_udf(F.col("is_active")))
-    return (
-        df.withColumn("customer_id", F.col("customer_id").cast("string"))
-        .withColumn("city", F.col("city").cast("string"))
+    return df.withColumn("customer_id", F.col("customer_id").cast("string")).withColumn(
+        "city", F.col("city").cast("string")
     )
+
 
 def read_refunds(spark: SparkSession, path: str, metrics: Dict[str, Any]) -> DataFrame:
     if not os.path.exists(path):
@@ -157,7 +169,10 @@ def read_refunds(spark: SparkSession, path: str, metrics: Dict[str, Any]) -> Dat
     df = df.withColumn("created_at", F.col("created_at").cast("string"))
     return df
 
-def read_orders_month(spark: SparkSession, in_dir: str, metrics: Dict[str, Any]) -> DataFrame:
+
+def read_orders_month(
+    spark: SparkSession, in_dir: str, metrics: Dict[str, Any]
+) -> DataFrame:
     pattern = os.path.join(in_dir, "orders_2025-03-*.json")
     paths = sorted(glob.glob(pattern))
     metrics["orders_files"] = len(paths)
@@ -165,13 +180,10 @@ def read_orders_month(spark: SparkSession, in_dir: str, metrics: Dict[str, Any])
     metrics["orders_files_list"] = paths
     if not paths:
         raise FileNotFoundError(f"Aucun fichier JSON trouvé via le pattern: {pattern}")
-    df = (
-        spark.read.option("multiLine", True)
-        .option("mode", "PERMISSIVE")
-        .json(paths)
-    )
+    df = spark.read.option("multiLine", True).option("mode", "PERMISSIVE").json(paths)
     metrics["orders_rows_raw"] = df.count()
     return df
+
 
 def write_sqlite_from_pandas(pdf: pd.DataFrame, table: str, db_path: str) -> None:
     conn = sqlite3.connect(db_path)
@@ -180,7 +192,10 @@ def write_sqlite_from_pandas(pdf: pd.DataFrame, table: str, db_path: str) -> Non
     finally:
         conn.close()
 
-def write_daily_csvs(pdf: pd.DataFrame, out_dir: str, sep: str, enc: str, ffmt: str) -> None:
+
+def write_daily_csvs(
+    pdf: pd.DataFrame, out_dir: str, sep: str, enc: str, ffmt: str
+) -> None:
     for d, sub in pdf.groupby("date"):
         out_path = os.path.join(out_dir, f"daily_summary_{d.replace('-', '')}.csv")
         sub[
@@ -217,9 +232,17 @@ def write_daily_csvs(pdf: pd.DataFrame, out_dir: str, sep: str, enc: str, ffmt: 
 # -----------------------
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--settings", default="../../settings.yaml", help="Chemin du settings.yaml (inputs)")
+    ap.add_argument(
+        "--settings",
+        default="../../settings.yaml",
+        help="Chemin du settings.yaml (inputs)",
+    )
     ap.add_argument("--spark-master", default="local[*]")
-    ap.add_argument("--output-root", default="../../data_pyspark", help="Racine des outputs dédiés PySpark")
+    ap.add_argument(
+        "--output-root",
+        default="../../data_pyspark",
+        help="Racine des outputs dédiés PySpark",
+    )
     args = ap.parse_args()
 
     t0 = time.time()
@@ -229,7 +252,12 @@ def main() -> None:
     outpaths = OutputPaths.build(args.output_root)
     LOG.info(
         "Inputs: %s | Outputs root: %s (out=%s, db=%s, rejects=%s, logs=%s)",
-        cfg.input_dir, outpaths.root, outpaths.out_dir, outpaths.db_dir, outpaths.rejects_dir, outpaths.logs_dir
+        cfg.input_dir,
+        outpaths.root,
+        outpaths.out_dir,
+        outpaths.db_dir,
+        outpaths.rejects_dir,
+        outpaths.logs_dir,
     )
 
     # Spark
@@ -274,9 +302,13 @@ def main() -> None:
 
     # Coercitions tolérantes
     metrics["items_qty_non_numeric"] = count_non_numeric(orders2, "item_qty")
-    metrics["items_unit_price_non_numeric"] = count_non_numeric(orders2, "item_unit_price")
+    metrics["items_unit_price_non_numeric"] = count_non_numeric(
+        orders2, "item_unit_price"
+    )
     orders2 = orders2.withColumn("item_qty_d", safe_double_col("item_qty"))
-    orders2 = orders2.withColumn("item_unit_price_d", safe_double_col("item_unit_price"))
+    orders2 = orders2.withColumn(
+        "item_unit_price_d", safe_double_col("item_unit_price")
+    )
 
     # Rejets prix unitaire négatif -> rejects/
     neg_mask = F.col("item_unit_price_d") < F.lit(0)
@@ -297,10 +329,16 @@ def main() -> None:
 
     # Déduplication (première created_at)
     wnd = Window.partitionBy("order_id").orderBy(F.col("created_at").asc())
-    orders3 = orders2.withColumn("rn", F.row_number().over(wnd)).filter(F.col("rn") == 1).drop("rn")
+    orders3 = (
+        orders2.withColumn("rn", F.row_number().over(wnd))
+        .filter(F.col("rn") == 1)
+        .drop("rn")
+    )
 
     # Calcul par commande
-    orders3 = orders3.withColumn("line_gross", F.col("item_qty_d") * F.col("item_unit_price_d"))
+    orders3 = orders3.withColumn(
+        "line_gross", F.col("item_qty_d") * F.col("item_unit_price_d")
+    )
     per_order = (
         orders3.groupBy("order_id", "customer_id", "channel", "created_at")
         .agg(
@@ -314,7 +352,9 @@ def main() -> None:
     # Join clients + actifs
     per_order = (
         per_order.join(
-            customers.select("customer_id", "city", "is_active"), on="customer_id", how="left"
+            customers.select("customer_id", "city", "is_active"),
+            on="customer_id",
+            how="left",
         )
         .filter(F.col("is_active") == F.lit(True))
         .drop("is_active")
@@ -325,7 +365,9 @@ def main() -> None:
 
     # Remboursements agrégés
     refunds_sum = refunds.groupBy("order_id").agg(F.sum("amount").alias("refunds_eur"))
-    per_order = per_order.join(refunds_sum, on="order_id", how="left").fillna({"refunds_eur": 0.0})
+    per_order = per_order.join(refunds_sum, on="order_id", how="left").fillna(
+        {"refunds_eur": 0.0}
+    )
 
     # SQLite: orders_clean -> db/
     orders_clean = per_order.select(
@@ -351,7 +393,9 @@ def main() -> None:
             F.sum("gross_revenue_eur").alias("gross_revenue_eur"),
             F.sum("refunds_eur").alias("refunds_eur"),
         )
-        .withColumn("net_revenue_eur", F.col("gross_revenue_eur") + F.col("refunds_eur"))
+        .withColumn(
+            "net_revenue_eur", F.col("gross_revenue_eur") + F.col("refunds_eur")
+        )
         .withColumnRenamed("order_date", "date")
         .orderBy("date", "city", "channel")
     )
@@ -396,22 +440,28 @@ def main() -> None:
     )
 
     print("\n=== RUN SUMMARY ===")
-    print(json.dumps(
-        {
-            "status": metrics["status"],
-            "orders_files": metrics.get("orders_files"),
-            "orders_rows_paid": metrics.get("orders_rows_paid"),
-            "rejected_negative_price_rows": metrics.get("rejected_negative_price_rows"),
-            "refunds_amount_non_numeric": metrics.get("refunds_amount_non_numeric"),
-            "items_qty_non_numeric": metrics.get("items_qty_non_numeric"),
-            "items_unit_price_non_numeric": metrics.get("items_unit_price_non_numeric"),
-            "daily_city_sales_rows": metrics.get("daily_city_sales_rows"),
-            "output_root": outpaths.root,
-            "db_path": outpaths.db_path,
-        },
-        ensure_ascii=False,
-        indent=2,
-    ))
+    print(
+        json.dumps(
+            {
+                "status": metrics["status"],
+                "orders_files": metrics.get("orders_files"),
+                "orders_rows_paid": metrics.get("orders_rows_paid"),
+                "rejected_negative_price_rows": metrics.get(
+                    "rejected_negative_price_rows"
+                ),
+                "refunds_amount_non_numeric": metrics.get("refunds_amount_non_numeric"),
+                "items_qty_non_numeric": metrics.get("items_qty_non_numeric"),
+                "items_unit_price_non_numeric": metrics.get(
+                    "items_unit_price_non_numeric"
+                ),
+                "daily_city_sales_rows": metrics.get("daily_city_sales_rows"),
+                "output_root": outpaths.root,
+                "db_path": outpaths.db_path,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
 
     spark.stop()
 
