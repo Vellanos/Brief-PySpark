@@ -1,0 +1,2349 @@
+[
+  {
+    "order_id": "O202503120001",
+    "customer_id": "C0325",
+    "channel": "web",
+    "created_at": "2025-03-12 14:31:24",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU044",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU026",
+        "qty": 2,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120002",
+    "customer_id": "C0228",
+    "channel": "app",
+    "created_at": "2025-03-12 09:10:04",
+    "payment_status": "failed",
+    "items": [
+      {
+        "sku": "SKU021",
+        "qty": 4,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU015",
+        "qty": 3,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120003",
+    "customer_id": "C0760",
+    "channel": "app",
+    "created_at": "2025-03-12 08:22:44",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU050",
+        "qty": 5,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU033",
+        "qty": 4,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120004",
+    "customer_id": "C0530",
+    "channel": "web",
+    "created_at": "2025-03-12 12:56:13",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU023",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU038",
+        "qty": 1,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120005",
+    "customer_id": "C0407",
+    "channel": "web",
+    "created_at": "2025-03-12 18:23:34",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU004",
+        "qty": 2,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU038",
+        "qty": 2,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU014",
+        "qty": 3,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120006",
+    "customer_id": "C0144",
+    "channel": "app",
+    "created_at": "2025-03-12 14:41:19",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 5,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120007",
+    "customer_id": "C0078",
+    "channel": "app",
+    "created_at": "2025-03-12 12:52:26",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU043",
+        "qty": 1,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU035",
+        "qty": 3,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU034",
+        "qty": 3,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU021",
+        "qty": 2,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120008",
+    "customer_id": "C0305",
+    "channel": "app",
+    "created_at": "2025-03-12 15:48:57",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU014",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU040",
+        "qty": 3,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU050",
+        "qty": 1,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120009",
+    "customer_id": "C0493",
+    "channel": "web",
+    "created_at": "2025-03-12 07:56:26",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU049",
+        "qty": 3,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU049",
+        "qty": 1,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU039",
+        "qty": 2,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120010",
+    "customer_id": "C0228",
+    "channel": "app",
+    "created_at": "2025-03-12 12:59:22",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU042",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU040",
+        "qty": 4,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120011",
+    "customer_id": "C0416",
+    "channel": "web",
+    "created_at": "2025-03-12 19:27:34",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU017",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU007",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU050",
+        "qty": 2,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120012",
+    "customer_id": "C0462",
+    "channel": "web",
+    "created_at": "2025-03-12 22:56:07",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU039",
+        "qty": 4,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU035",
+        "qty": 3,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU024",
+        "qty": 5,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU002",
+        "qty": 1,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120013",
+    "customer_id": "C0681",
+    "channel": "web",
+    "created_at": "2025-03-12 22:41:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU011",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU013",
+        "qty": 5,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU022",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120014",
+    "customer_id": "C0197",
+    "channel": "web",
+    "created_at": "2025-03-12 20:38:06",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU038",
+        "qty": 4,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU012",
+        "qty": 3,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120015",
+    "customer_id": "C0232",
+    "channel": "web",
+    "created_at": "2025-03-12 15:07:43",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU032",
+        "qty": 5,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU035",
+        "qty": 1,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU012",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU044",
+        "qty": 4,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120016",
+    "customer_id": "C0139",
+    "channel": "app",
+    "created_at": "2025-03-12 22:15:42",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU007",
+        "qty": 3,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU005",
+        "qty": 5,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU003",
+        "qty": 4,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU045",
+        "qty": 2,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120017",
+    "customer_id": "C0065",
+    "channel": "web",
+    "created_at": "2025-03-12 15:03:43",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU039",
+        "qty": 4,
+        "unit_price": -8.0
+      },
+      {
+        "sku": "SKU009",
+        "qty": 1,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120018",
+    "customer_id": "C0767",
+    "channel": "app",
+    "created_at": "2025-03-12 17:25:44",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU035",
+        "qty": 5,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU012",
+        "qty": 1,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU044",
+        "qty": 4,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120019",
+    "customer_id": "C0409",
+    "channel": "app",
+    "created_at": "2025-03-12 09:45:11",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU048",
+        "qty": 4,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU015",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU028",
+        "qty": 5,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU028",
+        "qty": 3,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120020",
+    "customer_id": "C0440",
+    "channel": "app",
+    "created_at": "2025-03-12 14:06:35",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU050",
+        "qty": 3,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120021",
+    "customer_id": "C0461",
+    "channel": "app",
+    "created_at": "2025-03-12 10:01:27",
+    "payment_status": "failed",
+    "items": [
+      {
+        "sku": "SKU041",
+        "qty": 4,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU011",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU048",
+        "qty": 3,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120022",
+    "customer_id": "C0366",
+    "channel": "app",
+    "created_at": "2025-03-12 13:17:12",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU015",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120023",
+    "customer_id": "C0302",
+    "channel": "app",
+    "created_at": "2025-03-12 17:46:25",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU046",
+        "qty": 1,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU015",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU037",
+        "qty": 1,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120024",
+    "customer_id": "C0292",
+    "channel": "web",
+    "created_at": "2025-03-12 07:34:28",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU031",
+        "qty": 2,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU034",
+        "qty": 2,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU045",
+        "qty": 5,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120025",
+    "customer_id": "C0077",
+    "channel": "web",
+    "created_at": "2025-03-12 12:33:32",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU037",
+        "qty": 5,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU009",
+        "qty": 2,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU031",
+        "qty": 3,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120026",
+    "customer_id": "C0228",
+    "channel": "app",
+    "created_at": "2025-03-12 19:49:18",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU044",
+        "qty": 2,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU028",
+        "qty": 5,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU036",
+        "qty": 4,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120027",
+    "customer_id": "C0131",
+    "channel": "app",
+    "created_at": "2025-03-12 16:09:42",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU025",
+        "qty": 5,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120028",
+    "customer_id": "C0347",
+    "channel": "web",
+    "created_at": "2025-03-12 15:08:51",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU013",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU048",
+        "qty": 1,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120029",
+    "customer_id": "C0643",
+    "channel": "app",
+    "created_at": "2025-03-12 12:27:44",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU018",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU017",
+        "qty": 2,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120030",
+    "customer_id": "C0603",
+    "channel": "app",
+    "created_at": "2025-03-12 20:25:12",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU050",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU017",
+        "qty": 3,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU022",
+        "qty": 1,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU008",
+        "qty": 5,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120031",
+    "customer_id": "C0419",
+    "channel": "app",
+    "created_at": "2025-03-12 16:56:00",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU043",
+        "qty": 2,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU035",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU016",
+        "qty": 4,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU036",
+        "qty": 2,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120032",
+    "customer_id": "C0433",
+    "channel": "web",
+    "created_at": "2025-03-12 13:37:58",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU042",
+        "qty": 1,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU023",
+        "qty": 3,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU036",
+        "qty": 1,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120033",
+    "customer_id": "C0534",
+    "channel": "web",
+    "created_at": "2025-03-12 07:47:25",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU035",
+        "qty": 4,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU034",
+        "qty": 1,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU011",
+        "qty": 1,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU043",
+        "qty": 2,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120034",
+    "customer_id": "C0727",
+    "channel": "app",
+    "created_at": "2025-03-12 16:16:40",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU032",
+        "qty": 3,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU003",
+        "qty": 3,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU004",
+        "qty": 3,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU020",
+        "qty": 3,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120035",
+    "customer_id": "C0410",
+    "channel": "web",
+    "created_at": "2025-03-12 20:41:23",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU015",
+        "qty": 3,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU043",
+        "qty": 3,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120036",
+    "customer_id": "C0697",
+    "channel": "app",
+    "created_at": "2025-03-12 13:12:33",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU034",
+        "qty": 2,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU009",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU003",
+        "qty": 3,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120037",
+    "customer_id": "C0612",
+    "channel": "app",
+    "created_at": "2025-03-12 10:23:16",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU017",
+        "qty": 1,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU050",
+        "qty": 5,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU016",
+        "qty": 4,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU039",
+        "qty": 5,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120038",
+    "customer_id": "C0677",
+    "channel": "web",
+    "created_at": "2025-03-12 16:54:15",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU016",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU040",
+        "qty": 5,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU013",
+        "qty": 2,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU028",
+        "qty": 2,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120039",
+    "customer_id": "C0065",
+    "channel": "app",
+    "created_at": "2025-03-12 22:40:25",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU001",
+        "qty": 2,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU041",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU007",
+        "qty": 2,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU020",
+        "qty": 4,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120040",
+    "customer_id": "C0529",
+    "channel": "app",
+    "created_at": "2025-03-12 13:43:49",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU003",
+        "qty": 5,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU038",
+        "qty": 2,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120041",
+    "customer_id": "C0543",
+    "channel": "web",
+    "created_at": "2025-03-12 14:22:17",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU037",
+        "qty": 3,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU017",
+        "qty": 1,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120042",
+    "customer_id": "C0787",
+    "channel": "app",
+    "created_at": "2025-03-12 17:50:22",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU037",
+        "qty": 2,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU035",
+        "qty": 3,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU010",
+        "qty": 2,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120043",
+    "customer_id": "C0354",
+    "channel": "web",
+    "created_at": "2025-03-12 07:29:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU016",
+        "qty": 4,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU007",
+        "qty": 4,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU022",
+        "qty": 3,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU020",
+        "qty": 3,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120044",
+    "customer_id": "C0421",
+    "channel": "web",
+    "created_at": "2025-03-12 19:22:00",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU046",
+        "qty": 3,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU006",
+        "qty": 4,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU044",
+        "qty": 5,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120045",
+    "customer_id": "C0666",
+    "channel": "web",
+    "created_at": "2025-03-12 20:43:31",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU046",
+        "qty": 5,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU046",
+        "qty": 4,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU033",
+        "qty": 1,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU003",
+        "qty": 5,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120046",
+    "customer_id": "C0023",
+    "channel": "web",
+    "created_at": "2025-03-12 14:11:31",
+    "payment_status": "failed",
+    "items": [
+      {
+        "sku": "SKU050",
+        "qty": 3,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU004",
+        "qty": 3,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120047",
+    "customer_id": "C0705",
+    "channel": "app",
+    "created_at": "2025-03-12 09:39:31",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU013",
+        "qty": 4,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU003",
+        "qty": 2,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120048",
+    "customer_id": "C0759",
+    "channel": "app",
+    "created_at": "2025-03-12 22:28:22",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU021",
+        "qty": 4,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU029",
+        "qty": 2,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU003",
+        "qty": 3,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120049",
+    "customer_id": "C0782",
+    "channel": "app",
+    "created_at": "2025-03-12 21:58:22",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU035",
+        "qty": 4,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU043",
+        "qty": 4,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120050",
+    "customer_id": "C0112",
+    "channel": "app",
+    "created_at": "2025-03-12 21:07:38",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU043",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU002",
+        "qty": 4,
+        "unit_price": -4.0
+      },
+      {
+        "sku": "SKU045",
+        "qty": 4,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120051",
+    "customer_id": "C0600",
+    "channel": "app",
+    "created_at": "2025-03-12 21:29:51",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU027",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU009",
+        "qty": 3,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU016",
+        "qty": 4,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120052",
+    "customer_id": "C0002",
+    "channel": "app",
+    "created_at": "2025-03-12 22:53:56",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU003",
+        "qty": 5,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120053",
+    "customer_id": "C0674",
+    "channel": "web",
+    "created_at": "2025-03-12 19:14:52",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU038",
+        "qty": 2,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU030",
+        "qty": 1,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU001",
+        "qty": 5,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120054",
+    "customer_id": "C0550",
+    "channel": "web",
+    "created_at": "2025-03-12 17:55:24",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU040",
+        "qty": 2,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU031",
+        "qty": 1,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU006",
+        "qty": 2,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120055",
+    "customer_id": "C0335",
+    "channel": "app",
+    "created_at": "2025-03-12 08:44:49",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU007",
+        "qty": 3,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120056",
+    "customer_id": "C0728",
+    "channel": "web",
+    "created_at": "2025-03-12 15:10:51",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU003",
+        "qty": 4,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU017",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU045",
+        "qty": 5,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120057",
+    "customer_id": "C0709",
+    "channel": "app",
+    "created_at": "2025-03-12 10:11:48",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU002",
+        "qty": 3,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU001",
+        "qty": 5,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU019",
+        "qty": 2,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120058",
+    "customer_id": "C0660",
+    "channel": "web",
+    "created_at": "2025-03-12 14:17:25",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU003",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU024",
+        "qty": 5,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU035",
+        "qty": 1,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120059",
+    "customer_id": "C0225",
+    "channel": "web",
+    "created_at": "2025-03-12 22:39:29",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU033",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU024",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU002",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU036",
+        "qty": 5,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120060",
+    "customer_id": "C0192",
+    "channel": "web",
+    "created_at": "2025-03-12 21:59:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU031",
+        "qty": 5,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU043",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU026",
+        "qty": 1,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120061",
+    "customer_id": "C0369",
+    "channel": "web",
+    "created_at": "2025-03-12 15:57:32",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU040",
+        "qty": 2,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU040",
+        "qty": 5,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU010",
+        "qty": 4,
+        "unit_price": 5.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120062",
+    "customer_id": "C0607",
+    "channel": "app",
+    "created_at": "2025-03-12 09:52:56",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU043",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU018",
+        "qty": 4,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU039",
+        "qty": 4,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU041",
+        "qty": 1,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120063",
+    "customer_id": "C0516",
+    "channel": "web",
+    "created_at": "2025-03-12 17:49:03",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU036",
+        "qty": 1,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU033",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU036",
+        "qty": 3,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120064",
+    "customer_id": "C0556",
+    "channel": "web",
+    "created_at": "2025-03-12 15:32:40",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU029",
+        "qty": 5,
+        "unit_price": -24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120065",
+    "customer_id": "C0522",
+    "channel": "web",
+    "created_at": "2025-03-12 10:24:54",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU010",
+        "qty": 2,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU039",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120066",
+    "customer_id": "C0152",
+    "channel": "app",
+    "created_at": "2025-03-12 18:26:39",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU001",
+        "qty": 3,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU046",
+        "qty": 4,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU044",
+        "qty": 3,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120067",
+    "customer_id": "C0003",
+    "channel": "app",
+    "created_at": "2025-03-12 17:19:42",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU036",
+        "qty": 4,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU009",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU039",
+        "qty": 4,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU007",
+        "qty": 5,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120068",
+    "customer_id": "C0697",
+    "channel": "web",
+    "created_at": "2025-03-12 22:04:11",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU049",
+        "qty": 3,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU035",
+        "qty": 4,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU026",
+        "qty": 5,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU025",
+        "qty": 4,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120069",
+    "customer_id": "C0602",
+    "channel": "app",
+    "created_at": "2025-03-12 18:23:44",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU012",
+        "qty": 2,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU049",
+        "qty": 1,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU011",
+        "qty": 5,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU018",
+        "qty": 3,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120070",
+    "customer_id": "C0652",
+    "channel": "web",
+    "created_at": "2025-03-12 22:57:38",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 5,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU032",
+        "qty": 1,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU033",
+        "qty": 5,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120071",
+    "customer_id": "C0561",
+    "channel": "app",
+    "created_at": "2025-03-12 19:32:07",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU044",
+        "qty": 1,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU047",
+        "qty": 2,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU042",
+        "qty": 4,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120072",
+    "customer_id": "C0662",
+    "channel": "app",
+    "created_at": "2025-03-12 16:34:40",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU004",
+        "qty": 3,
+        "unit_price": 4.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120073",
+    "customer_id": "C0472",
+    "channel": "web",
+    "created_at": "2025-03-12 21:25:29",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU041",
+        "qty": 3,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU034",
+        "qty": 1,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120074",
+    "customer_id": "C0431",
+    "channel": "web",
+    "created_at": "2025-03-12 09:37:16",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU024",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU002",
+        "qty": 1,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120075",
+    "customer_id": "C0689",
+    "channel": "app",
+    "created_at": "2025-03-12 22:56:49",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU048",
+        "qty": 1,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU030",
+        "qty": 5,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120076",
+    "customer_id": "C0672",
+    "channel": "web",
+    "created_at": "2025-03-12 22:51:39",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU005",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU033",
+        "qty": 5,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120077",
+    "customer_id": "C0530",
+    "channel": "app",
+    "created_at": "2025-03-12 21:18:52",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 1,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU010",
+        "qty": 4,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU037",
+        "qty": 3,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU011",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120078",
+    "customer_id": "C0005",
+    "channel": "app",
+    "created_at": "2025-03-12 22:53:53",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU030",
+        "qty": 4,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU012",
+        "qty": 1,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120079",
+    "customer_id": "C0200",
+    "channel": "web",
+    "created_at": "2025-03-12 13:56:53",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU021",
+        "qty": 5,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120080",
+    "customer_id": "C0380",
+    "channel": "app",
+    "created_at": "2025-03-12 18:44:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU042",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU006",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU019",
+        "qty": 5,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120081",
+    "customer_id": "C0509",
+    "channel": "web",
+    "created_at": "2025-03-12 18:06:22",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU041",
+        "qty": 1,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU041",
+        "qty": 2,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU018",
+        "qty": 3,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU028",
+        "qty": 3,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120082",
+    "customer_id": "C0472",
+    "channel": "web",
+    "created_at": "2025-03-12 16:53:32",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU023",
+        "qty": 2,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU045",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU047",
+        "qty": 3,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120083",
+    "customer_id": "C0720",
+    "channel": "web",
+    "created_at": "2025-03-12 19:29:38",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU037",
+        "qty": 1,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU023",
+        "qty": 1,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU050",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120084",
+    "customer_id": "C0794",
+    "channel": "app",
+    "created_at": "2025-03-12 21:30:13",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU040",
+        "qty": 2,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU039",
+        "qty": 5,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU035",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU039",
+        "qty": 1,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120085",
+    "customer_id": "C0756",
+    "channel": "web",
+    "created_at": "2025-03-12 16:32:36",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU032",
+        "qty": 4,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU018",
+        "qty": 2,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU012",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU014",
+        "qty": 2,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120086",
+    "customer_id": "C0125",
+    "channel": "web",
+    "created_at": "2025-03-12 11:58:08",
+    "payment_status": "pending",
+    "items": [
+      {
+        "sku": "SKU044",
+        "qty": 4,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120087",
+    "customer_id": "C0172",
+    "channel": "app",
+    "created_at": "2025-03-12 09:30:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU019",
+        "qty": 2,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU009",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU045",
+        "qty": 2,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120088",
+    "customer_id": "C0303",
+    "channel": "web",
+    "created_at": "2025-03-12 16:15:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU048",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU047",
+        "qty": 2,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120089",
+    "customer_id": "C0733",
+    "channel": "web",
+    "created_at": "2025-03-12 18:48:25",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU024",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU033",
+        "qty": 1,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU044",
+        "qty": 4,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU025",
+        "qty": 1,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120090",
+    "customer_id": "C0496",
+    "channel": "web",
+    "created_at": "2025-03-12 12:43:33",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 2,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120091",
+    "customer_id": "C0794",
+    "channel": "app",
+    "created_at": "2025-03-12 20:11:58",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU012",
+        "qty": 1,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU026",
+        "qty": 3,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU042",
+        "qty": 3,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU027",
+        "qty": 3,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120092",
+    "customer_id": "C0188",
+    "channel": "web",
+    "created_at": "2025-03-12 21:28:32",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU017",
+        "qty": 2,
+        "unit_price": 19.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120093",
+    "customer_id": "C0382",
+    "channel": "app",
+    "created_at": "2025-03-12 12:10:05",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU048",
+        "qty": 3,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU017",
+        "qty": 5,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU004",
+        "qty": 4,
+        "unit_price": 19.9
+      },
+      {
+        "sku": "SKU017",
+        "qty": 2,
+        "unit_price": 12.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120094",
+    "customer_id": "C0574",
+    "channel": "app",
+    "created_at": "2025-03-12 17:16:27",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU011",
+        "qty": 4,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU027",
+        "qty": 4,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU044",
+        "qty": 2,
+        "unit_price": 8.0
+      },
+      {
+        "sku": "SKU013",
+        "qty": 3,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120095",
+    "customer_id": "C0698",
+    "channel": "web",
+    "created_at": "2025-03-12 21:50:46",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU002",
+        "qty": 1,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120096",
+    "customer_id": "C0440",
+    "channel": "web",
+    "created_at": "2025-03-12 09:05:44",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 2,
+        "unit_price": 7.5
+      },
+      {
+        "sku": "SKU037",
+        "qty": 3,
+        "unit_price": 8.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120097",
+    "customer_id": "C0717",
+    "channel": "web",
+    "created_at": "2025-03-12 20:18:13",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU006",
+        "qty": 1,
+        "unit_price": 9.9
+      },
+      {
+        "sku": "SKU036",
+        "qty": 1,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU020",
+        "qty": 3,
+        "unit_price": 4.0
+      },
+      {
+        "sku": "SKU011",
+        "qty": 4,
+        "unit_price": 7.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120098",
+    "customer_id": "C0310",
+    "channel": "web",
+    "created_at": "2025-03-12 22:10:48",
+    "payment_status": "failed",
+    "items": [
+      {
+        "sku": "SKU030",
+        "qty": 3,
+        "unit_price": 12.5
+      },
+      {
+        "sku": "SKU004",
+        "qty": 3,
+        "unit_price": 24.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120099",
+    "customer_id": "C0733",
+    "channel": "app",
+    "created_at": "2025-03-12 14:49:19",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU008",
+        "qty": 3,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU025",
+        "qty": 3,
+        "unit_price": 15.0
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120100",
+    "customer_id": "C0489",
+    "channel": "app",
+    "created_at": "2025-03-12 11:37:38",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU019",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU036",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120100",
+    "customer_id": "C0489",
+    "channel": "app",
+    "created_at": "2025-03-12 11:37:38",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU019",
+        "qty": 5,
+        "unit_price": 15.0
+      },
+      {
+        "sku": "SKU036",
+        "qty": 4,
+        "unit_price": 9.9
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120088",
+    "customer_id": "C0303",
+    "channel": "web",
+    "created_at": "2025-03-12 16:15:41",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU048",
+        "qty": 1,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU047",
+        "qty": 2,
+        "unit_price": 2.5
+      }
+    ]
+  },
+  {
+    "order_id": "O202503120084",
+    "customer_id": "C0794",
+    "channel": "app",
+    "created_at": "2025-03-12 21:30:13",
+    "payment_status": "paid",
+    "items": [
+      {
+        "sku": "SKU040",
+        "qty": 2,
+        "unit_price": 24.9
+      },
+      {
+        "sku": "SKU039",
+        "qty": 5,
+        "unit_price": 2.5
+      },
+      {
+        "sku": "SKU035",
+        "qty": 2,
+        "unit_price": 5.0
+      },
+      {
+        "sku": "SKU039",
+        "qty": 1,
+        "unit_price": 12.5
+      }
+    ]
+  }
+]

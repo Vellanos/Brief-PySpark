@@ -1,7 +1,7 @@
 # Paths (relative or absolute)
-input_dir: ./data/march-input
-output_dir: ./data/out
-db_path: ./data/out/sales.db
+input_dir: ../../data/march-input
+output_dir: ../../data/out
+db_path: ../../data/out/sales.db
 
 # CSV export options
 csv_sep: ";"
