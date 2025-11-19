@@ -1,0 +1,9 @@
+# Paths (relative or absolute)
+input_dir: ./data/march-input
+output_dir: ./data/out
+db_path: ./data/out/sales.db
+
+# CSV export options
+csv_sep: ";"
+csv_encoding: "utf-8"
+csv_float_format: "%.2f"
