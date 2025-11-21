@@ -37,7 +37,6 @@ handler.setFormatter(logging.Formatter("%(asctime)s | %(levelname)s | %(message)
 LOG.addHandler(handler)
 LOG.setLevel(logging.INFO)
 
-
 # -----------------------
 # Configuration & chemins
 # -----------------------
@@ -54,7 +53,6 @@ class Settings:
     csv_sep: str = ";"
     csv_encoding: str = "utf-8"
     csv_float_format: str = "%.2f"
-
 
 @dataclass
 class OutputPaths:
@@ -81,7 +79,6 @@ class OutputPaths:
             Path(d).mkdir(parents=True, exist_ok=True)  # crée les dossiers si besoin
         return OutputPaths(root, out_dir, db_dir, rejects_dir, logs_dir, db_path)
 
-
 def load_settings(path: str) -> Settings:
     """
     Charge settings.yaml pour récupérer l'emplacement des *inputs* (fichiers sources).
@@ -96,7 +93,6 @@ def load_settings(path: str) -> Settings:
         csv_encoding=raw.get("csv_encoding", Settings.csv_encoding),
         csv_float_format=raw.get("csv_float_format", Settings.csv_float_format),
     )
-
 
 # -----------------------
 # Helpers “nettoyage nombres”
@@ -125,7 +121,6 @@ def count_non_numeric(df: DataFrame, colname: str) -> int:
         df.select(F.sum(F.when(~s.rlike(NUMERIC_REGEX), F.lit(1)).otherwise(F.lit(0))).alias("n"))
         .first()["n"] or 0
     )
-
 
 # -----------------------
 # Lecture des données
@@ -177,7 +172,6 @@ def read_orders_month(spark: SparkSession, in_dir: str, metrics: Dict[str, Any])
     metrics["orders_rows_raw"] = df.count()
     return df
 
-
 # -----------------------
 # Écriture (100% Spark)
 # -----------------------
@@ -223,7 +217,6 @@ def _write_single_csv(df: DataFrame, target_path: str, sep: str, header: bool = 
                 p.rmdir()
     Path(tmp_dir).rmdir()
 
-
 def write_daily_csvs_spark(agg_df: DataFrame, out_dir: str, sep: str) -> None:
     """
     Écrit:
@@ -241,7 +234,6 @@ def write_daily_csvs_spark(agg_df: DataFrame, out_dir: str, sep: str) -> None:
         sub = agg_df.filter(F.col("date") == F.lit(d))
         out_path = os.path.join(out_dir, f"daily_summary_{d.replace('-', '')}.csv")
         _write_single_csv(sub, out_path, sep=sep, header=True)
-
 
 def write_sqlite_via_jdbc(
     df: DataFrame, table: str, sqlite_path: str, sqlite_driver_jar: Optional[str]
@@ -261,7 +253,6 @@ def write_sqlite_via_jdbc(
        .mode("overwrite")
        .save())
     return True
-
 
 # -----------------------
 # Pipeline (enchaînement des étapes)
@@ -484,7 +475,6 @@ def main() -> None:
     ))
 
     spark.stop()
-
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,6 @@
 {
   "status": "OK",
-  "started_at": "2025-11-21T09:18:10.504384",
+  "started_at": "2025-11-21T14:26:33.636348",
   "output_root": "/home/david/Simplon/Ester/Brief_PySpark/data_pyspark",
   "out_dir": "/home/david/Simplon/Ester/Brief_PySpark/data_pyspark/out",
   "db_path": "/home/david/Simplon/Ester/Brief_PySpark/data_pyspark/db/sales_db.db",
@@ -49,8 +49,8 @@
   "rejected_negative_price_rows": 69,
   "rejects_items_csv": "/home/david/Simplon/Ester/Brief_PySpark/data_pyspark/rejects/rejects_items.csv",
   "orders_clean_rows": 2471,
-  "finished_at": "2025-11-21T09:18:51.617034",
-  "duration_sec": 50.67,
+  "finished_at": "2025-11-21T14:27:05.180505",
+  "duration_sec": 38.489,
   "daily_city_sales_rows": 491,
   "sqlite_driver_jar": "",
   "sqlite_written": false,

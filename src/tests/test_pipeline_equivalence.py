@@ -202,7 +202,7 @@ def _step(msg: str) -> None:
 def test_pandas_vs_pyspark_equivalence(tmp_path: Path) -> None:
     """
     Scénario du test:
-    1) Crée un dataset jouet avec des cas "qui piquent": prix négatif à rejeter, refund "error".
+    1) Crée un dataset jouet : prix négatif à rejeter, refund "error".
     2) Exécute la pipeline Pandas (référence).
     3) Exécute la pipeline PySpark (100% Spark, SQLite JDBC ou CSV fallback).
     4) Lit les résultats des deux côtés et compare:
